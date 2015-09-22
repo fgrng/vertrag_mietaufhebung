@@ -1,0 +1,56 @@
+% ---------------------------------------------------------------------
+% --- Header ----------------------------------------------------------
+% ---------------------------------------------------------------------
+
+% --- Include Header files
+
+\input{header/head_base.tex}
+\input{header/head_typo.tex}
+\input{header/head_item.tex}
+
+\setlength\parindent{0pt}
+
+\makeatletter
+\newcommand \MYdotfill {{\color{gray} \leavevmode \cleaders \hb@xt@ .33em{\hss .\hss }\hfill \kern \z@}}
+\makeatother
+
+% --- Document data
+
+\title{Untermietvertrag}
+\author{}
+\date{\today}
+
+% --- Daten Mietvertrag
+
+\input{content/data.tex}
+
+% ---------------------------------------------------------------------
+% --- Document --------------------------------------------------------
+% ---------------------------------------------------------------------
+
+\begin{document}
+
+\fancyfoot[C]{\footnotesize{\thepage}}
+
+{\Huge \textsc{Mietaufhebungsvertrag}}
+
+\vspace{2cm}
+
+% ---------------------------------------------------------------------
+
+\input{content/person_info.tex}
+\vspace{-6ex}
+\input{content/base.tex}
+
+\pagebreak
+
+\renewcommand{\headrulewidth}{0.4pt}
+\input{content/contract.tex}
+
+% ---------------------------------------------------------------------
+
+\end{document}
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
